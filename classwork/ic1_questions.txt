@@ -1,0 +1,10 @@
+	1	What is a web server, in your own words?
+	⁃	A web server is a collection of information, such as a message, which can be put on the internet using computers as hosts, such as us with local host. Its online, but its local to us only.
+	2	What does Docker do for us, and how is it different from installing Node directly?
+	⁃	Based off of the directions, it seems that Docker makes containers for us, which basically consolidates everything together for us.
+	3	Why do web files go in a public/ folder?
+	⁃	They need to be public so that they can be accessed, if web files are private, the website cannot function properly.
+	4	What does localhost refer to?
+	⁃	Localhost refers to the fact that we are hosting the website. Its not accessible to everyone, just us.
+	5	In docker run -p 3000:3000, what do the two numbers mean?
+	⁃	The first number is our port, and the second number is the containers port, we are making sure that the ports are the same I suppose.

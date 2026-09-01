@@ -1,0 +1,7 @@
+1. Pushing is uploading our code from our laptops / computers to the Internet, and then pulling is when you bring it from the Internet into your VM.
+
+2. We mapped our port to 8080 instead of 3000 in the docker run command as it seems to be a valid or popular alternative path.
+
+3. It is safer to run our app as a non-root user instead of a root user as if we got hacked, as you said, we wouldn't be at the root of it all. As a non-root user, we won't be affected by the hacker as much.
+
+4. By having our repository public, we allow our VM and the overall internet to see it. This means that we do not have to worry about setting up passwords or any security to access our code, which could be tedious in the future.
