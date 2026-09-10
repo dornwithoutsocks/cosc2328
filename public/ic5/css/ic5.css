@@ -1,0 +1,27 @@
+/* IC5 – COSC 2328 – Professor McCurry
+   Implemented by: Dorian Braun */
+
+body {
+  font-family: Georgia, serif;
+  background-color: #e7a9f5;
+  color: #3a3a3a;
+  margin: 0;
+  padding: 16px;
+}
+.card {
+  background-color: #b4aa76;
+  border: 1px solid #cc3eff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+.photo {
+  border: 3px solid #600b01;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+#intro {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #68046f;
+}
