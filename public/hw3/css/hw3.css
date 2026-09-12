@@ -1,0 +1,44 @@
+/* HW3 – COSC 2328 – Professor McCurry
+   Implemented by: Dorian Braun */
+:root {
+    --page-bg: #ECF0F1;
+    --card-bg: #F7F3E3;
+    --text-color: #2B2118;
+    --marine-green: #386641;
+    --red-accent: #6F1A07;
+    --space: 16px;
+    --radius: 8px;
+}
+body {
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    font-family: monospace;
+    margin: 0;
+    padding: var(--space);
+}
+#name {
+    font-size: 64px;
+    color: var(--marine-green);
+    margin-bottom: var(--space);
+}
+.subhead {
+    color: var(--text-color);
+    font-size: 24px;
+}
+.subhead:hover {
+    color: var(--red-accent);
+}
+.image-wrapper {
+    padding: var(--space);
+    border: 10px solid var(--red-accent);
+    margin: var(--space) auto;
+    border-radius: var(--radius);
+    background-color: var(--card-bg);
+    width: fit-content;
+}
+.image-wrapper img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
