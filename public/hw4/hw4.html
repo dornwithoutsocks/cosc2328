@@ -1,0 +1,73 @@
+<!-- HW4 – COSC 2328 – Professor McCurry
+     Implemented by: Dorian Braun -->
+    
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FutureWeb 2026 Registration</title>
+        <link rel="stylesheet" href="css/hw4.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>FutureWeb 2026</h1>
+            <p> Register for the St. Edward's University Web Development Conference</p>
+        </header>
+
+        <main class = "container">
+
+            <div class = "event-info">
+                <h2>Event Details</h2>
+                <ul>
+                    <li>Date: Saturday, October 3rd, 2026</li>
+                    <li>Location: John Brooks Williams South, St. Edward's University, Austin, Texas</li>
+                    <li>Speakers: Joe Rogan, Tim Cook, Jensen Huang, and Guest Speaker: Elon Musk</li>
+                </ul>
+                <img src="images/joeroganpodcast.png" alt="a goated podcast">
+            </div>
+
+            <div class = "registration-form">
+                <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                    
+                    <fieldset>
+                        <legend>Attendee Details</legend>
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="arrival">Date Of Arrival</label>
+                        <input type="date" id="arrival" name="arrival">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Session Preferences</legend>
+
+                        <label for="track">Track Selection</label>
+                        <select id="track" name="track">
+                            <optgroup label="Front-End">
+                                <option value="React">React</option>
+                                <option value="Vue">Vue</option>
+                                <option value="CSS">CSS</option>
+                            </optgroup>
+                            <optgroup label="Back-End">
+                                <option value="Node.js">Node.js</option>
+                                <option value="Python">Python</option>
+                                <option value="Docker">Docker</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="resume">Upload Resume/Portfolio</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf, .docx">   
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </body>        
+</html>
