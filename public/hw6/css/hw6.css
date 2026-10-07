@@ -1,0 +1,114 @@
+/* HW6 – COSC 2328 – Professor McCurry
+   Implemented by: Dorian Braun */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #192e56 0%, #0d1b34 100%);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.site-header h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+fieldset {
+  border: 2px solid #edb920;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+  color: #192e56;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #192e56;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #25447e;
+}
+
+.results-hidden {
+  display: none;
+}
+
+#results {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #f7f3ed;
+  border-left: 5px solid #edb920;
+  border-radius: 4px;
+}
+
+#results h2 {
+  color: #192e56;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+#results p {
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.site-footer {
+  text-align: center;
+  color: #e2dbc4;
+  margin-top: 2rem;
+}
+
+.alert {
+  background: #ea4433;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin: 16px 0;
+}

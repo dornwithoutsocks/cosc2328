@@ -1,0 +1,66 @@
+<!-- HW6 – COSC 2328 – Professor McCurry
+     Implemented by: Dorian Braun -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW6 - Interactive Product Calculator</title>
+  <link rel="stylesheet" href="css/hw6.css">
+  <script defer src="js/hw6-script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Product Order Calculator</h1>
+  </header>
+
+  <main class="container">
+    <form id="orderForm">
+      <fieldset>
+        <legend>Order Details</legend>
+        
+        <div class="form-group">
+          <label for="product">Select Product:</label>
+          <select id="product" required>
+            <option value="" disabled selected>-- Choose a product --</option>
+            <option value="macbook">Macbook ($1,399.99)</option>
+            <option value="iphone">iPhone Duo ($1,999.99)</option>
+            <option value="laptop">ROG Strix X16 ($1,799.99)</option>
+            <option value="photographyCourse">Photography Course ($9,999.99)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" max="10" value="1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="discountCode">Discount Code:</label>
+          <input type="text" id="discountCode" placeholder="Optional">
+        </div>
+
+        <button type="submit">Calculate Total</button>
+      </fieldset>
+    </form>
+
+    <div id="results" class="results-hidden">
+      <h2>Order Summary</h2>
+      <p>Product: <span id="resProduct"></span></p>
+      <p>Quantity: <span id="resQuantity"></span></p>
+      <p>Subtotal: <span id="resSubtotal"></span></p>
+      <p>Discount: <span id="resDiscount"></span></p>
+      <p>Tax (8.25%): <span id="resTax"></span></p>
+      <p>Total: <span id="resTotal"></span></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>COSC 2328 | Implemented by: Dorian Braun</p>
+  </footer>
+
+  <noscript>
+    <div class="alert">Enable JavaScript to calculate order totals.</div>
+  </noscript>
+</body>
+</html>
