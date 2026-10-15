@@ -1,5 +1,5 @@
 // IC13 – COSC 2328 – Professor McCurry
-// Implemented by: [Your Full Name]
+// Implemented by: Dorian Braun
 
 // - - - Order State - - -
 let selectedProduct = null;
