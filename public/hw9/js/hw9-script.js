@@ -1,5 +1,18 @@
 // HW9 – COSC 2328 – Professor McCurry
 // Implemented by: Dorian Braun
+
+/*
+Homework Questions:
+
+1.dotenv loads your .env file into Node's global process.env at startup. Because app.js runs it first, any file required afterward (like your router) automatically inherits those values without calling dotenv again.
+
+2. A <form> triggers a default browser page reload, requiring e.preventDefault() to stop it. A plain <button> has no default submission behavior, so clicking it just runs your custom JavaScript fetch() seamlessly.
+
+3. The case list resets because it lives purely in temporary server RAM. When the container restarts, the RAM wipes clean. To save data permanently, you need a database (like SQLite in HW10).
+
+4. fetch() receives the server's status code in the response object. The response.ok property is true for successful responses (like 201) and false for errors (like 400), making it easy to catch and display issues. 
+
+*/
 // Step 11: Fetch and display detective clearance from .env
 async function loadCredentials() {
   try {
